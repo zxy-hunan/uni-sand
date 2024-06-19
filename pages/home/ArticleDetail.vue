@@ -1,8 +1,9 @@
 <template>
 	<view>
 
+		<o-empty v-if="JSON.stringify(response)=='{}'" style="height: 100vh;" height="100%" text="暂无数据..." />
 
-		<view style="display: flex;flex-direction: column;margin: 20rpx;padding-bottom: 120rpx; ">
+		<view v-else style="display: flex;flex-direction: column;margin: 20rpx;padding-bottom: 120rpx; ">
 
 			<text style="display: flex;align-items: center;justify-content: start;font-size: 1.2rem;">
 				{{response.title ? response.title:''}}</text>
@@ -335,6 +336,10 @@
 			}
 		},
 		methods: {
+			isStringNotEmpty(obj) {
+				// return str !== null && str !== undefined && str !== '';
+				return Object.keys(obj).length === 0 && Object.getOwnPropertyNames(obj).length === 0;
+			},
 			removeatt() {
 				const ids = this.attentionList[0].id;
 				delAttention(ids).then(response => {

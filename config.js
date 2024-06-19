@@ -1,7 +1,8 @@
 // 应用全局配置
 module.exports = {
   // baseUrl: 'https://vue.ruoyi.vip/prod-api',
-   baseUrl: 'http://47.121.27.62/prod-api',
+   // baseUrl: 'http://47.121.27.62/prod-api',
+   baseUrl: 'http://gyuelife.online/prod-api',
   // baseUrl: 'http://localhost:8080',
   // 应用信息
   appInfo: {
