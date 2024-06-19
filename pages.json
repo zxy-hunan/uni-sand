@@ -1,0 +1,177 @@
+{
+	"pages": [
+		// {
+		// 	"path": "pages/Welcome",
+		// 	"style": {
+		// 		"navigationBarTitleText": "",
+		// 		"app-plus": { // 针对APP端的特殊配置
+		// 			"titleNView": false // 关闭顶部导航条
+		// 		},
+		// 		"enablePullDownRefresh": false
+		// 	}
+		// },
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "", // 清空标题文本
+				"app-plus": { // 针对APP端的特殊配置
+					"titleNView": false // 关闭顶部导航条
+				},
+				"navigationBarTitleText": "综合",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 50
+			}
+		},
+		{
+			"path": "pages/me/me",
+			"style": {
+				"navigationBarTitleText": "", // 清空标题文本
+				"app-plus": { // 针对APP端的特殊配置
+					"titleNView": false // 关闭顶部导航条
+				},
+				// "navigationBarTitleText" : "我",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/me/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/me/forget",
+			"style": {
+				"navigationBarTitleText": "忘记密码",
+				"enablePullDownRefresh": false
+			}
+		},
+
+		{
+			"path": "pages/me/register",
+			"style": {
+				"navigationBarTitleText": "注册",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/talk/talk",
+			"style": {
+				"navigationBarTitleText": "热议",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/me/setting/Settings",
+			"style": {
+				"navigationBarTitleText": "设置"
+			}
+		},
+		{
+			"path": "pages/me/setting/About",
+			"style": {
+				"navigationBarTitleText": "关于"
+			}
+		},
+		{
+			"path": "pages/me/setting/Personal",
+			"style": {
+				"navigationBarTitleText": "创作者中心"
+			}
+		},
+		{
+			"path": "pages/home/ArticleDetail",
+			"style": {
+				"navigationBarTitleText": "详情"
+			}
+		},
+		{
+			"path": "pages/home/AddArticle",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/home/ArticleDetail1",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/session/session",
+			"style": {
+				"navigationBarTitleText": "会话"
+			}
+		},
+		{
+			"path": "pages/midPage",
+			"style": {
+				"navigationBarTitleText": "",
+				"disableScroll": true, // 设置为 true 则页面整体不能上下滚动（bounce效果）
+				"navigationStyle": "custom", // 原生导航栏不显示，这个与app-plus中的titleNView 取其中一个就行，只是为了不显示原生导航栏而已
+				"backgroundColor": "rgba(0, 0, 0, 0.5)",
+				"app-plus": {
+					"background": "rgba(0, 0, 0, 0.5)",
+					"popGesture": "none",
+					"bounce": "none",
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path" : "pages/me/setting/info",
+			"style" : 
+			{
+				"navigationBarTitleText" : "个人中心"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"background": "#efeff4"
+		}
+	},
+	"tabBar": {
+		"color": "#bfbfbf",
+		"selectedColor": "#1e80ff",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/home/home",
+				"iconPath": "static/images/tabbar/home.png",
+				"selectedIconPath": "static/images/tabbar/homesel.png",
+				"text": "首页"
+			}, {
+				"pagePath": "pages/talk/talk",
+				"iconPath": "static/images/tabbar/dialoguesell.png",
+				"selectedIconPath": "static/images/tabbar/dialoguel.png",
+				"text": "热议"
+			},
+			{
+				"pagePath": "pages/session/session",
+				"iconPath": "static/images/tabbar/tallk.png",
+				"selectedIconPath": "static/images/tabbar/tallksel.png",
+				"text": "会话"
+			}, {
+				"pagePath": "pages/me/me",
+				"iconPath": "static/images/tabbar/me.png",
+				"selectedIconPath": "static/images/tabbar/mesel.png",
+				"text": "我的"
+			}
+		],
+		"midButton": {
+			"pagePath": "pages/midpage",
+			"iconPath": "static/images/tabbar/add.png",
+			"selectedIconPath": "static/images/tabbar/add.png",
+			"width": "60px",
+			"height": "60px",
+			"iconWidth": "55px",
+			"iconheight": "55px"
+		}
+	}
+}
